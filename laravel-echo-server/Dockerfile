@@ -7,5 +7,4 @@ RUN apk add --update --no-cache bash \
 
 WORKDIR /app
 
-CMD ["start"]
-ENTRYPOINT laravel-echo-server
+ENTRYPOINT ["laravel-echo-server", "start"]
